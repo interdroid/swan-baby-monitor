@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Monitoring Settings" >
+        <ListPreference
+            android:defaultValue="self"
+            android:key="swan_location"
+            android:title="Set Location" />
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:dialogTitle="Enter Sound Level Threshold"
+            android:inputType="number"
+            android:key="threshold"
+            android:summary="Set Sound Level Threshold"
+            android:title="Sound Level Threshold" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notification Settings" >
+        <RingtonePreference
+            android:key="awake"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="Choose Awake Sound" />
+        <RingtonePreference
+            android:key="low_battery"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="Choose Low Battery Sound" />
+
+        <Preference
+            android:key="image"
+            android:title="Select Notification Image" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Controls" >
+        <CheckBoxPreference
+            android:key="start"
+            android:summaryOff="Monitoring is OFF"
+            android:summaryOn="Monitoring is ON"
+            android:title="Enable Monitoring" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
