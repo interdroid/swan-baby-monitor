@@ -29,15 +29,8 @@
         <receiver android:name="interdroid.swan.babymonitor.MonitorReceiver" >
             <intent-filter>
                 <data
-                    android:host="awake"
-                    android:scheme="swanexpression" />
-
-                <action android:name="interdroid.swan.NEW_TRISTATE" />
-            </intent-filter>
-            <intent-filter>
-                <data
-                    android:host="low"
-                    android:scheme="swanexpression" />
+                    android:host="interdroid.swan.babymonitor"
+                    android:scheme="swan" />
 
                 <action android:name="interdroid.swan.NEW_TRISTATE" />
             </intent-filter>
